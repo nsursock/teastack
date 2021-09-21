@@ -9,7 +9,7 @@
     "build:css": "tailwindcss -i src/_bundle/main.pcss -o dist/assets/main.bundle.css --minify --postcss",
     "build:js": "esbuild src/_bundle/main.js --outfile=dist/assets/main.bundle.js --bundle",
     "clean": "rm -rf dist",
-    "dev": "cross-env NODE_ENV=development npm-run-all -p dev:*",
+    "start": "cross-env NODE_ENV=development npm-run-all -p dev:*",
     "dev:11ty": "eleventy --serve --quiet",
     "dev:css": "tailwindcss -i src/_bundle/main.pcss -o dist/assets/main.bundle.css --watch --postcss",
     "dev:js": "esbuild src/_bundle/main.js --outfile=dist/assets/main.bundle.js --bundle --watch"

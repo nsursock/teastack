@@ -9,7 +9,7 @@
   {% block head %}{% endblock %}
 </head>
 <body hx-boost="true" class="{{ 'debug-screens' if env.devMode }}">
-  {% include 'header.njk' %}
+  {% include 'header.html' %}
   {% block body %}
     <div class="container py-8">
       {{ content | safe }}
